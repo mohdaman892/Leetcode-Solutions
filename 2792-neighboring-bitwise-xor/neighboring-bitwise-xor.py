@@ -22,8 +22,6 @@ class Solution:
                     if curr==first:
                         return False
             else:
-                if arr[i]==0:
-                    curr = curr
-                else:
+                if arr[i]==1:
                     curr = 1 if curr==0 else 0
         return True
