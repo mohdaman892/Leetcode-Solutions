@@ -1,7 +1,8 @@
 class Solution:
     def doesValidArrayExist(self, arr: List[int]) -> bool:
         n = len(arr)
-        a = []
+        first = None
+        curr = None
         if n==1:
             if arr[0]==1:
                 return False
@@ -10,22 +11,19 @@ class Solution:
         for i in range(n):
             if i==0:
                 if arr[i]==0:
-                    a.append(0)
-                    a.append(0)
+                    first,curr = 0,0
                 else:
-                    a.append(0)
-                    a.append(1)
+                    first,cuur = 0,1
             elif i==n-1:
                 if arr[i]==0:
-                    if a[-1]!=a[0]:
+                    if curr!=first:
                             return False
                 else:
-                    if a[-1]==a[0]:
+                    if curr==first:
                         return False
             else:
                 if arr[i]==0:
-                    a.append(a[-1])
+                    curr = curr
                 else:
-                    k = 1 if a[-1]==0 else 0
-                    a.append(k)
+                    curr = 1 if curr==0 else 0
         return True
