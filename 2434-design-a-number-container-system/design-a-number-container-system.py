@@ -23,7 +23,9 @@ class NumberContainers:
     def find(self, number: int) -> int:
         if number not in self.num_to_inds:
             return -1
-        return list(self.num_to_inds[number])[0]
+        for i in self.num_to_inds[number]:
+            return i
+        # return list(self.num_to_inds[number])[0]
 
 
 # Your NumberContainers object will be instantiated and called as such:
