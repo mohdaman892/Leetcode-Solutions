@@ -18,7 +18,6 @@ class Solution:
         for c in range(1,n+1):
             s = set()
             f(0,c,[],n)
-            print(s)
             s2 = set()
             for st in s:
                 for st2 in set(permutations(st)):
