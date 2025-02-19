@@ -3,7 +3,7 @@ class Solution:
         
         def f(i):
             if i == n:
-                st = "".join(j for j in list(a))
+                st = "".join(j for j in a)
                 self.b.append(st)
                 return
             
