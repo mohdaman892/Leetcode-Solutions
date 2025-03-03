@@ -1,11 +1,18 @@
 class Solution:
     def pivotArray(self, nums: List[int], pivot: int) -> List[int]:
-        a,b,c = [],[],[]
+        l=[]
+        h=[]
+        c=0
         for i in nums:
             if i<pivot:
-                a.append(i)
+                l.append(i)
             elif i==pivot:
-                b.append(i)
+                c+=1
             else:
-                c.append(i)
-        return a+b+c
+                h.append(i)
+        for i in range(c):
+            l.append(pivot)
+        for j in h:
+            l.append(j)
+        return l
+        
