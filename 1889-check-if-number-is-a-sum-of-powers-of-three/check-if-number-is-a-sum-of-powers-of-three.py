@@ -15,5 +15,5 @@ class Solution:
         while 3**x<=n:
             a.append(3**x)
             x+=1
-        print(a)
+        # print(a)
         return f(0,0)
