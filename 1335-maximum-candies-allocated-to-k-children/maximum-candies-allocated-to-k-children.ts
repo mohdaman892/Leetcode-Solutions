@@ -15,7 +15,6 @@ function maximumCandies(candies: number[], k: number): number {
     var l:number = 0
     var r:number = candies[candies.length - 1]
     var ans:number = Number.MIN_SAFE_INTEGER
-    console.log(l,r)
     while(l<r){
         var mid:number = Math.floor((l+r)/2)
         console.log(mid)
