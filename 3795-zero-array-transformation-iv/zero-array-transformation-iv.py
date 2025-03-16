@@ -19,7 +19,6 @@ class Solution:
         for i in range(len(nums)):
             target = nums[i]
             x = f(0,target,i)
-            print(x)
             if x == sys.maxsize:
                 return -1
             res = max(res,x)
