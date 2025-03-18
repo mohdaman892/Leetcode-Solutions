@@ -15,7 +15,6 @@ class Solution:
 
         i = 0
         ans = 1
-        print(n)
         for j in range(1,n):
             for k in range(len(nums[j])):
                 if nums[j][k]=="1":
@@ -31,7 +30,6 @@ class Solution:
                                 i+=1
                                 break
                             i+=1
-            print(i,j)
             ans = max(ans,j-i+1)
             for k in range(len(nums[j])):
                 if nums[j][k] == "1":
