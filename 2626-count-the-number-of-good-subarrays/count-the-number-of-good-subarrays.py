@@ -4,8 +4,6 @@ class Solution:
         n = len(nums)
         hm = defaultdict(int)
         for j in range(n):
-            # if nums[j] not in hm:
-            #     hm[nums[j]] = 0
             c += hm[nums[j]]
             hm[nums[j]] += 1
             while i<j and c>=k:
