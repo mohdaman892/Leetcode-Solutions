@@ -6,7 +6,6 @@ class Solution:
             x += i
             a = min(a,x)
             b = max(b,x)
-        print(a,b)
         a = l-a
         b = r-b
         if a>b:
