@@ -39,7 +39,6 @@ class Solution:
         x = [flag1,flag2,flag3,flag4]
         y = [a,b,c,d]
 
-        print(x,y)
 
         ans = sys.maxsize
         for i in range(len(x)):
