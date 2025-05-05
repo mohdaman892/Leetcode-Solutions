@@ -17,6 +17,5 @@ class Solution:
             else:
                 return f(i+1,False) + f(i+1,True)
 
-        grid = [[0 for i in range(n)] for i in range(2)]
         mod = 10**9+7
         return f(0,False)%mod
